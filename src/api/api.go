@@ -2,10 +2,6 @@ package api
 
 import (
 	"bytes"
-	"github.com/gin-contrib/static"
-	"github.com/gin-gonic/gin"
-	_ "github.com/satori/go.uuid"
-	uuid "github.com/satori/go.uuid"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -16,6 +12,11 @@ import (
 	"strings"
 	"text/template"
 	"time"
+
+	"github.com/gin-contrib/static"
+	"github.com/gin-gonic/gin"
+	_ "github.com/satori/go.uuid"
+	uuid "github.com/satori/go.uuid"
 )
 
 const s = `<?xml version="1.0" encoding="UTF-8"?>
@@ -236,5 +237,5 @@ func Run(path string, crt string, key string, ca string) {
 			})
 		}
 	})
-	_ = router.Run("127.0.0.1:7001")
+	_ = router.Run("127.0.0.1:8080")
 }
