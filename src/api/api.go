@@ -35,6 +35,8 @@ const s = `<?xml version="1.0" encoding="UTF-8"?>
                 <true/>
                 <key>Icon</key>
                 <data>{{.Icon}}</data>
+				<key>IgnoreManifestScope</key>
+				<true/>
                 <key>IsRemovable</key>
                 <true/>
                 <key>Label</key>
